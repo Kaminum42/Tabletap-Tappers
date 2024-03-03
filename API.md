@@ -26,7 +26,7 @@ API接口仅提供https版本，请求体统一使用JSON格式
 
 | 方法 | 路径 | 说明 |
 | ---- | ---- | ---- |
-| GET | /api/v1/games?[page={page}]&[page-size={page-size}]&[sort=user-id\|asc]&[keyword=…] | 查询游戏列表 |
+| GET | /api/v1/games?[page={page}]&[page-size={page-size}]&[sort=game-id\|asc]&[keyword=…] | 查询游戏列表 |
 | GET | /api/v1/games/{game-id} | 查询游戏信息 |
 | GET | /api/v1/games/{game-id}/rankings | 查询游戏排行榜 |
 | GET | /api/v1/games/{game-id}/… | TODO: 查询其他信息 |
@@ -39,7 +39,7 @@ API接口仅提供https版本，请求体统一使用JSON格式
 ## 房间 (rooms)
 | 方法 | 路径 | 描述 |
 | ---- | ---- | ---- |
-| GET | /api/v1/rooms?game={game-id}&[page={page}]&[page-size={page-size}]&[sort=user-id\|asc]&[keyword=…] | 查询房间列表 TODO 查询房间列表时，关联的游戏id应为必填项还是可选项？ |
+| GET | /api/v1/rooms?game={game-id}&[page={page}]&[page-size={page-size}]&[sort=room-id\|asc]&[keyword=…] | 查询房间列表 TODO 查询房间列表时，关联的游戏id应为必填项还是可选项？ |
 | GET | /api/v1/rooms/{room-id} | 查询房间信息，无需游戏id |
 | POST | /api/v1/rooms?game={game-id} | 创建房间 |
 | PUT | /api/v1/rooms/{room-id} | 修改房间信息（仅房主?） |
