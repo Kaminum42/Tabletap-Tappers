@@ -39,10 +39,19 @@ API接口仅提供https版本，请求体统一使用JSON格式
 ## 房间 (rooms)
 | 方法 | 路径 | 描述 |
 | ---- | ---- | ---- |
-| GET | /api/v1/rooms?game={game-id}&[page={page}]&[page-size={page-size}]&[sort=room-id\|asc]&[keyword=…] | 查询房间列表 TODO 查询房间列表时，关联的游戏id应为必填项还是可选项？ |
+| GET | /api/v1/rooms?game={game-id}&[page={page}]&[page-size={page-size}]&[sort=room-id\|desc]&[keyword=…] | 查询房间列表 TODO 查询房间列表时，关联的游戏id应为必填项还是可选项？ |
 | GET | /api/v1/rooms/{room-id} | 查询房间信息，无需游戏id |
 | POST | /api/v1/rooms?game={game-id} | 创建房间 |
 | PUT | /api/v1/rooms/{room-id} | 修改房间信息（仅房主?） |
 | DELETE | /api/v1/rooms/{room-id} | 删除房间（仅房主） |
 | PUT | /api/v1/rooms/{room-id}/join | 加入房间 |
 | PUT | /api/v1/rooms/{room-id}/leave | 离开房间 |
+
+## 对局 (rounds)
+| 方法 | 路径 | 描述 |
+| ---- | ---- | ---- |
+| GET | /api/v1/rounds?game={game-id}&[page={page}]&[page-size={page-size}]&[sort=round-id\|desc] | 查询对局列表 |
+| GET | /api/v1/rounds/{round-id} | 查询对局信息（仅参与者?） |
+| POST | /api/v1/rounds?room={room-id} | 创建对局记录 |
+| PUT | /api/v1/rounds/{round-id} | 修改对局记录（允许吗?） |
+| DELETE | /api/v1/rounds/{round-id} | 删除对局记录（允许吗?） |
