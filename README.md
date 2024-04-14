@@ -6,8 +6,6 @@
 
 可以在此提交代码，也可以添加链接指向自己的项目
 
-$\color{red}{ ※※※ 请在下方标注 Github Username 方便拉协作 ※※※ }$
-
 ## ※日程表：
 
 2024年4月23日 系统测试
@@ -16,11 +14,7 @@ $\color{red}{ ※※※ 请在下方标注 Github Username 方便拉协作 ※�
 
 2024年5月4日 查重
 
-2024年5月21日 答辩
-
-## ※ 项目分工：
-
-请在此处标上自己的 Github Username ，方便拉协作
+2024年5月28日 答辩
 
 ### 浏览器前端
 
@@ -56,4 +50,4 @@ $\color{red}{ ※※※ 请在下方标注 Github Username 方便拉协作 ※�
 
 ## ※技术栈：
 
-Node.js + Restful API + [Socket.io](http://Socket.io) + Postgres + Redis + Docker + Vue + Cocos Creator
+Node.js + Restful API + Typescript + Express + Postgres + Docker + Vue + Cocos Creator
