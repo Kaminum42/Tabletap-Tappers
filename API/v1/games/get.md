@@ -31,7 +31,7 @@
     - 是否必须: 否
     - 示例: `1`
 
-- `page-size`
+- `page_size`
     - 数据类型: `number`
     - 描述: 结果保留最多多少条数据, 默认为 `10`
     - 约束: 正整数, 1 ~ 50
@@ -63,7 +63,7 @@
 ## 请求示例
 
 ```
-GET /api/v1/games?page=1&page-size=10&sort=game-id|desc&keyword=%E5%AF%8C%E7%BF%81 HTTP/1.1
+GET /api/v1/games?page=1&page_size=10&sort=game_id|desc&keyword=%E5%AF%8C%E7%BF%81 HTTP/1.1
 ...
 ```
 
